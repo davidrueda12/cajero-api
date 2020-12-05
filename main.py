@@ -9,6 +9,10 @@ from fastapi import FastAPI, HTTPException
 
 api = FastAPI()
 
+@api.get("/")
+async def mensaje():
+    return{"Mensaje: Esta es la pagina principal"}
+
 @api.post("/user/auth/")
 async def auth_user(user_in: UserIn):
 
