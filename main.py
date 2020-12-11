@@ -13,7 +13,7 @@ api = FastAPI()
 
 origins = [
     "http://localhost",
-    "http://localhost:8081"
+    "http://localhost:8081",
     "https://cajero-app-master.herokuapp.com/"
 ]
 
